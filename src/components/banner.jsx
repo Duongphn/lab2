@@ -7,7 +7,7 @@ const slides = [
   {
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1400&q=80",
+      "https://i.pinimg.com/1200x/15/20/83/152083b6beb25c55e36aac7331ddd290.jpg",
     title: "FASHION COLLECTION 2026",
     description: "Discover the latest trends in fashion trends for 2026.",
   },
@@ -21,7 +21,7 @@ const slides = [
   {
     id: 3,
     image:
-      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1400&q=80",
+      "https://i.pinimg.com/1200x/d8/2a/33/d82a33fd312477499dd861c1fc1ffe38.jpg",
     title: "NEW ARRIVALS",
     description: "Explore our newest clothing collection.",
   },
