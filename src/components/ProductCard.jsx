@@ -3,7 +3,7 @@
 // when user clicks add to cart, the cart count is updated accordingly. Responsive.
 //change text when click add to cart to "Added" change color from success to secondary and disable button for 1 second before reverting back to "Add to Cart" and enabled.
 import { useState } from "react";
-import { Card, Button, Badge } from "react-bootstrap";
+import { Card, Button, Badge, Alert } from "react-bootstrap";
 
 function ProductCard({ product, onAddToCart }) {
   const { name, price, image, inStock } = product;
@@ -12,6 +12,7 @@ function ProductCard({ product, onAddToCart }) {
   const handleClick = () => {
     onAddToCart(product);
     setAdded(true);
+    setTimeout(() => setAdded(false), 2000);
   };
 
   return (
@@ -40,6 +41,9 @@ function ProductCard({ product, onAddToCart }) {
         >
           {added ? "Added to Cart" : "Add to Cart"}
         </Button>
+        <Alert variant="success" show={added}>
+          Item added to cart!
+        </Alert>
       </Card.Body>
     </Card>
   );
